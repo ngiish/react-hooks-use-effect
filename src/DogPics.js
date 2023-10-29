@@ -14,7 +14,7 @@ function DogPics() {
         //setting state in the useEffect callback
         setImages(data.message);
       });
-  });
+  }, []);
 <button>Click Me</button>;
   console.log("render");
 
