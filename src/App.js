@@ -4,6 +4,14 @@ function App() {
   const [count, setCount] = useState(0)
   const [text, setText] = useState("")
 
+  useEffect(() => {
+    document.title = text
+  }, [text])
+
+  useEffect(() => {
+    setTimeout(() => setCount(0), 5000)
+  }, [])
+
   useEffect(
     //1st ard:side effect (callback function)
     () => console.log("useEffect called"),
