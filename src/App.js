@@ -7,7 +7,12 @@ function App() {
 
   console.log("Component rendering");
 
-  return <button>Click Me</button>;
+  return (
+    <div>
+      <button>Click Me</button>;
+      <input type="text" placeholder="Type away..." />
+    </div>
+  )
 }
 
 export default App;
