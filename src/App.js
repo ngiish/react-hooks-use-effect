@@ -4,9 +4,12 @@ function App() {
   const [count, setCount] = useState(0)
   const [text, setText] = useState("")
 
-  useEffect(() => {
-    console.log("useEffect called");
-  });
+  useEffect(
+    //1st ard:side effect (callback function)
+    () => console.log("useEffect called"),
+    //2nd arg: dependencies array
+    [count]
+    );
 
   console.log("Component rendering");
 
